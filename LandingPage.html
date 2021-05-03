@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <script src="js/fontawesome.js"></script>
+    <script type="text/javascript" src="data.json"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="info">
+
+            <div class="bg-image">
+                <div class="overlay"></div>
+                <div class="top-header">
+                    <div class="weather" id="weather-data">
+                        38* SUNNY
+                    </div>
+                </div>
+
+                <div class="search-wrapper">
+                    <h4 class="city-name">NEW DELHI</h4>
+                    <div class="search">
+                        <input type="text" id="search-input" oninput="mydata(this.value)" />
+                        <button type="submit" id="btn-submit" class="btn-search">Search</button>
+                    </div>
+                </div>
+
+                <div class="sider">
+
+                </div>
+
+                <div class="bottom-tabs">
+                    <div id="parentHorizontalTab">
+                        <ul class="resp-tabs-list hor_1">
+                            <li>
+                                <a href="#" id="places">PLACES</a>
+                            </li>
+                            <li><a href="#" id="hotels">HOTELS</a></li>
+                            <li><a href="#" id="restorants">RESTORANTS</a></li>
+                            <li><a href="#" id="offices">OFFICES</a></li>
+
+                        </ul>
+                        <div class="resp-tabs-container hor_1">
+                            <div>
+                                <div class="places">
+                                    Palce
+                                </div>
+                            </div>
+                            <div>
+                                <div class="hotel">
+                                    <div class="hotel-info">
+                                        <div class="hotel-img">
+                                            <img src="images/hotel-img.jpg" />
+                                        </div>
+                                        <div class="hotel-ratings">
+                                            <h2 class="hotel-name">The Hotel Palace</h2>
+                                            <div id="ratings">
+                                                <div class="rating-group">
+                                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                                                    <label aria-label="0 stars" class="rating__label" for="rating2-0"></label>
+                                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
+                                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio" checked>
+                                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio" checked>
+                                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hotel-checkin">
+                                        <ul class="checkin-details">
+                                            <li class="heighlight">
+                                                <p>Check-in</p>
+                                                <h1>16</h1>
+                                                <h3>WED</h3>
+                                            </li>
+                                            <li>
+                                                <p>Check-out</p>
+                                                <h1>20</h1>
+                                                <h3>SUN</h3>
+                                            </li>
+                                            <li class="heighlight">
+                                                <p style="margin-bottom: 0;">From <span>&#8377;1500</span></p>
+                                                <button type="submit" class="btn-book">Book Now</button>
+                                                <p style="margin-bottom: 20px;font-size: 12px;">Have a Promo code?</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="restorants">
+                                    Restorants
+                                </div>
+                            </div>
+                            <div>
+                                <div class="Offices">
+                                    Offices
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+
+    <script src="js/easyResponsiveTabs.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //Horizontal Tab
+            $('#parentHorizontalTab').easyResponsiveTabs({
+                type: 'default', //Types: default, vertical, accordion
+                width: 'auto', //auto or any width like 600px
+                fit: true, // 100% fit in a container
+                tabidentify: 'hor_1', // The tab groups identifier
+                activate: function (event) { // Callback function if tab is switched
+                    var $tab = $(this);
+                    var $info = $('#nested-tabInfo');
+                    var $name = $('span', $info);
+                    $name.text($tab.text());
+                    $info.show();
+                }
+            });
+
+            // Child Tab
+            $('#ChildVerticalTab_1').easyResponsiveTabs({
+                type: 'vertical',
+                width: 'auto',
+                fit: true,
+                tabidentify: 'ver_1', // The tab groups identifier
+                activetab_bg: 'transparent', // background color for active tabs in this group
+                inactive_bg: 'transparent', // background color for inactive tabs in this group
+                //active_border_color: '#c1c1c1', // border color for active tabs heads in this group
+                //active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
+            });
+
+            //Vertical Tab
+            $('#parentVerticalTab').easyResponsiveTabs({
+                type: 'vertical', //Types: default, vertical, accordion
+                width: 'auto', //auto or any width like 600px
+                fit: true, // 100% fit in a container
+                closed: 'accordion', // Start closed if in accordion view
+                tabidentify: 'hor_1', // The tab groups identifier
+                activate: function (event) { // Callback function if tab is switched
+                    var $tab = $(this);
+                    var $info = $('#nested-tabInfo2');
+                    var $name = $('span', $info);
+                    $name.text($tab.text());
+                    $info.show();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
